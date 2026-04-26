@@ -1,6 +1,6 @@
 {
   "name": "cv",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "My personal CV / landing page",
   "main": "index.js",
   "type": "module",
