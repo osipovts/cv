@@ -1,0 +1,18 @@
+osipov.undo.it {
+    encode gzip
+
+    root * /var/www/cv/dist
+    try_files {path} /index.html
+
+    header {
+        X-Content-Type-Options "nosniff"
+        X-Frame-Options "DENY"
+        Referrer-Policy "strict-origin-when-cross-origin"
+        -Server
+    }
+
+    log {
+        output file /var/log/caddy/cv.log
+        format json
+    }
+}

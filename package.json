@@ -1,18 +1,13 @@
 {
-  "name": "skeleton",
-  "version": "1.0.0",
-  "description": "",
+  "name": "cv",
+  "version": "0.0.0",
+  "description": "My personal CV / landing page",
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "tsc && tsc-esm-fix",
-    "start": "node dist/index.js",
-    "dev": "tsx watch src/index.ts",
-    "lint": "eslint src",
-    "lint:fix": "eslint src --fix",
-    "format": "prettier --write \"src/**/*.ts\"",
-    "format:check": "prettier --check \"src/**/*.ts\""
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview"
   },
   "keywords": [],
   "author": "",
@@ -20,15 +15,28 @@
   "packageManager": "pnpm@10.28.2",
   "devDependencies": {
     "@eslint/js": "^10.0.1",
+    "@tailwindcss/postcss": "^4.2.4",
     "@types/node": "^25.5.0",
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
     "@typescript-eslint/eslint-plugin": "^8.57.0",
     "@typescript-eslint/parser": "^8.57.0",
+    "@vitejs/plugin-react": "^6.0.1",
+    "autoprefixer": "^10.5.0",
     "eslint": "^10.0.3",
     "eslint-config-prettier": "^10.1.8",
     "globals": "^17.4.0",
+    "postcss": "^8.5.10",
     "prettier": "^3.8.1",
+    "tailwindcss": "^4.2.4",
     "tsc-esm-fix": "^3.1.2",
     "tsx": "^4.21.0",
-    "typescript": "^5.9.3"
+    "typescript": "^5.9.3",
+    "vite": "^8.0.10"
+  },
+  "dependencies": {
+    "framer-motion": "^12.38.0",
+    "react": "^19.2.5",
+    "react-dom": "^19.2.5"
   }
 }
