@@ -5,7 +5,7 @@ export default function Footer() {
         {/* Ссылки */}
         <div className="flex items-center gap-6">
           <a
-            href="https://github.com/osipovts"
+            href="https://github.com/osipov_ts"
             target="_blank"
             rel="noopener noreferrer"
             className="text-sm text-zinc-500 hover:text-zinc-200 transition-colors inline-flex items-center gap-2"
@@ -17,7 +17,7 @@ export default function Footer() {
           </a>
           <span className="w-px h-4 bg-zinc-800" aria-hidden="true" />
           <a
-            href="https://t.me/pookerpanda"
+            href="https://t.me/osipov_ts"
             target="_blank"
             rel="noopener noreferrer"
             className="text-sm text-zinc-500 hover:text-zinc-200 transition-colors inline-flex items-center gap-2"

@@ -199,7 +199,7 @@ export default function Hero() {
               GitHub
             </a>
             <a
-              href="https://t.me/pookerpanda"
+              href="https://t.me/osipov_ts"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-amber-500 text-sm font-semibold text-zinc-950 hover:bg-amber-400 transition-colors duration-200"

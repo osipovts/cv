@@ -4,7 +4,7 @@ import { Section, fadeIn } from './Section';
 const channels = [
   {
     name: 'Telegram',
-    href: 'https://t.me/pookerpanda',
+    href: 'https://t.me/osipov_ts',
     description: 'Оперативная связь',
     icon: (
       <svg className="w-5 h-5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
