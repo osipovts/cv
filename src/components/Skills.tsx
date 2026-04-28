@@ -12,7 +12,7 @@ const groups = [
   },
   {
     title: 'Инструменты',
-    items: ['Git', 'Docker'],
+    items: ['Git', 'Docker', 'NGINX'],
   },
   {
     title: 'Данные',
