@@ -12,15 +12,19 @@ const groups = [
   },
   {
     title: 'Инструменты',
-    items: ['Git', 'Docker', 'OpenTelemetry'],
+    items: ['Git', 'Docker'],
   },
   {
     title: 'Данные',
     items: ['PostgreSQL', 'MongoDB', 'Redis'],
   },
   {
+    title: 'Observability',
+    items: ['OpenTelemetry', 'Jaeger', 'Prometheus', 'Grafana'],
+  },
+  {
     title: 'Подходы',
-    items: ['DDD', 'Clean Architecture', 'DI / IoC', 'SAGA'],
+    items: ['Clean Architecture', 'DI / IoC', 'SAGA'],
   },
 ];
 

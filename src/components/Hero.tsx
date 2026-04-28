@@ -142,16 +142,8 @@ export default function Hero() {
             variants={prefersReduced ? undefined : fadeItem}
             className="text-left max-w-lg text-[0.95rem] leading-relaxed text-zinc-400"
           >
-            Привет! Меня зовут Алексей Осипов, и я строю надежный backend: монолиты, микросервисы,
+            Привет! Меня зовут Алексей Осипов, я строю надежный backend: монолиты, микросервисы,
             observability и интеграции.
-          </motion.p>
-
-          <motion.p
-            custom={4}
-            variants={prefersReduced ? undefined : fadeItem}
-            className="text-left max-w-lg text-[0.95rem] leading-relaxed text-zinc-400"
-          >
-            Комфортно работаю и в небольших стартапах, и в больших кроссфункциональных командах.
           </motion.p>
 
           <motion.p
@@ -159,8 +151,18 @@ export default function Hero() {
             variants={prefersReduced ? undefined : fadeItem}
             className="text-left max-w-lg text-[0.95rem] leading-relaxed text-zinc-400"
           >
-            Люблю DDD и Clean Architecture, но без фанатизма: выбираю подход под задачу, а не
-            архитектуру ради архитектуры.
+            Умею быстро погружаться в сложные домены, превращать разрозненные требования в понятную
+            и устойчивую систему, а затем доводить ее до релиза.
+          </motion.p>
+
+          <motion.p
+            custom={5}
+            variants={prefersReduced ? undefined : fadeItem}
+            className="text-left max-w-lg text-[0.95rem] leading-relaxed text-zinc-400"
+          >
+            Думaю не только кодом, но и метриками, отказоустойчивостью, скоростью развития продукта
+            и удобством команды, поэтому одинаково уверенно работаю как в старте нового проекта, так
+            и в поддержке высоконагруженного production.
           </motion.p>
 
           {/* Факты */}
