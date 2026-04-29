@@ -39,10 +39,10 @@ export default function Nav() {
         <div className="max-w-5xl mx-auto px-6 h-16 flex items-center justify-between">
           <a
             href="#"
-            className="font-mono text-sm text-zinc-400 hover:text-amber-400 transition-colors"
+            className="font-mono text-sm text-zinc-400 hover:text-sky-400 transition-colors"
           >
-            osipov<span className="text-amber-500">.</span>undo
-            <span className="text-amber-500">.</span>it
+            osipov<span className="text-sky-500">.</span>undo
+            <span className="text-sky-500">.</span>it
           </a>
 
           <div className="hidden md:flex items-center gap-8">
@@ -93,7 +93,7 @@ export default function Nav() {
               key={link.href}
               href={link.href}
               onClick={closeMenu}
-              className="text-2xl font-medium text-zinc-300 hover:text-amber-400 transition-colors"
+              className="text-2xl font-medium text-zinc-300 hover:text-sky-400 transition-colors"
             >
               {link.label}
             </a>

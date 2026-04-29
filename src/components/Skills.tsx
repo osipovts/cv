@@ -33,7 +33,7 @@ export default function Skills() {
     <Section id="skills">
       <div className="max-w-5xl mx-auto px-6">
         <motion.h2 variants={fadeIn} className="text-3xl font-bold mb-12 flex items-center gap-4">
-          <span className="font-mono text-sm text-amber-500/50">01</span>
+          <span className="font-mono text-sm text-sky-500/50">01</span>
           Технологический стек
         </motion.h2>
 
@@ -51,7 +51,7 @@ export default function Skills() {
                 {group.items.map((item) => (
                   <li key={item} className="flex items-center gap-2.5 text-sm text-zinc-400">
                     <span
-                      className="block w-1 h-1 rounded-full bg-amber-500/60 shrink-0"
+                      className="block w-1 h-1 rounded-full bg-sky-500/60 shrink-0"
                       aria-hidden="true"
                     />
                     {item}

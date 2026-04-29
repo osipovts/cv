@@ -95,7 +95,7 @@ export default function Experience() {
     <Section id="experience">
       <div className="mx-auto max-w-5xl px-6">
         <motion.h2 variants={fadeIn} className="mb-12 flex items-center gap-4 text-3xl font-bold">
-          <span className="font-mono text-sm text-amber-500/50">02</span>
+          <span className="font-mono text-sm text-sky-500/50">02</span>
           Опыт
         </motion.h2>
 
@@ -112,7 +112,7 @@ export default function Experience() {
                 <div className="grid gap-6 md:grid-cols-[260px_minmax(0,1fr)] md:gap-10">
                   {/* Левая колонка */}
                   <div>
-                    <div className="mb-3 font-mono text-sm text-amber-500/50 transition-colors duration-300">
+                    <div className="mb-3 font-mono text-sm text-sky-500/50 transition-colors duration-300">
                       {number}
                     </div>
 

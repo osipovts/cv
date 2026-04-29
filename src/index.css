@@ -17,7 +17,7 @@
   }
 
   ::selection {
-    @apply bg-amber-500/30 text-amber-100;
+    @apply bg-sky-500/30 text-sky-100;
   }
 
   :focus:not(:focus-visible) {
@@ -25,7 +25,7 @@
   }
 
   :focus-visible {
-    @apply outline-2 outline-offset-2 outline-amber-500/60 rounded-sm;
+    @apply outline-2 outline-offset-2 outline-sky-500/60 rounded-sm;
   }
 }
 

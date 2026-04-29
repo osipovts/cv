@@ -29,7 +29,7 @@ export default function Contacts() {
     <Section id="contacts">
       <div className="max-w-5xl mx-auto px-6">
         <motion.h2 variants={fadeIn} className="text-3xl font-bold mb-12 flex items-center gap-4">
-          <span className="font-mono text-sm text-amber-500/50">03</span>
+          <span className="font-mono text-sm text-sky-500/50">03</span>
           Контакты
         </motion.h2>
 
@@ -42,19 +42,19 @@ export default function Contacts() {
                 href={channel.href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group flex items-center gap-4 p-4 rounded-xl border border-zinc-800/50 bg-zinc-900/30 hover:border-amber-500/20 hover:bg-zinc-900/50 transition-all duration-300"
+                className="group flex items-center gap-4 p-4 rounded-xl border border-zinc-800/50 bg-zinc-900/30 hover:border-sky-500/20 hover:bg-zinc-900/50 transition-all duration-300"
               >
-                <div className="flex items-center justify-center w-10 h-10 rounded-xl bg-amber-500/10 text-amber-500 group-hover:bg-amber-500/15 transition-colors duration-300 shrink-0">
+                <div className="flex items-center justify-center w-10 h-10 rounded-xl bg-sky-500/10 text-sky-500 group-hover:bg-sky-500/15 transition-colors duration-300 shrink-0">
                   {channel.icon}
                 </div>
                 <div>
-                  <div className="font-semibold text-zinc-200 group-hover:text-amber-50 transition-colors duration-300 text-sm">
+                  <div className="font-semibold text-zinc-200 group-hover:text-sky-50 transition-colors duration-300 text-sm">
                     {channel.name}
                   </div>
                   <div className="text-xs text-zinc-500 mt-0.5">{channel.description}</div>
                 </div>
                 <svg
-                  className="w-4 h-4 text-zinc-600 group-hover:text-amber-500/60 ml-auto shrink-0 transition-colors duration-300"
+                  className="w-4 h-4 text-zinc-600 group-hover:text-sky-500/60 ml-auto shrink-0 transition-colors duration-300"
                   viewBox="0 0 24 24"
                   fill="none"
                   stroke="currentColor"
