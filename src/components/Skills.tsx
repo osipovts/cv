@@ -3,28 +3,28 @@ import { Section, fadeIn } from './Section';
 
 const groups = [
   {
-    title: 'Основа',
-    items: ['Node.js', 'TypeScript', 'NestJS', 'Express'],
+    title: 'Языки и фреймворки',
+    items: ['Node.js', 'TypeScript', 'NestJS'],
   },
   {
-    title: 'Микросервисы',
-    items: ['gRPC', 'NATS', 'BullMQ', 'REST API'],
+    title: 'БД и ORM',
+    items: ['PostgreSQL', 'MongoDB', 'Redis', 'Drizzle', 'Knex'],
   },
   {
-    title: 'Инструменты',
-    items: ['Git', 'Docker', 'NGINX'],
+    title: 'Архитектура и интеграции',
+    items: ['REST API', 'gRPC', 'DDD', 'NATS', 'BullMQ'],
   },
   {
-    title: 'Данные',
-    items: ['PostgreSQL', 'MongoDB', 'Redis'],
+    title: 'Инфраструктура',
+    items: ['Git', 'Github Actions', 'Docker', 'NGINX', 'Linux / CLI'],
   },
   {
-    title: 'Observability',
-    items: ['OpenTelemetry', 'Jaeger', 'Prometheus', 'Grafana'],
+    title: 'Безопасность и тестирование',
+    items: ['JWT', 'OAuth2', 'Jest'],
   },
   {
-    title: 'Подходы',
-    items: ['Clean Architecture', 'DI / IoC', 'SAGA'],
+    title: 'Наблюдаемость',
+    items: ['OpenTelemetry', 'Prometheus', 'Grafana'],
   },
 ];
 
