@@ -102,7 +102,7 @@ export default function Experience() {
   return (
     <Section id="experience">
       <div className="mx-auto max-w-5xl px-6">
-        <motion.h2 variants={fadeIn} className="mb-12 flex items-center gap-4 text-3xl font-bold">
+        <motion.h2 variants={fadeIn} className="mb-10 flex items-center gap-4 text-3xl font-bold">
           <span className="font-mono text-sm text-sky-500/50">02</span>
           Опыт
         </motion.h2>
@@ -186,7 +186,7 @@ export default function Experience() {
                       {project.cases.map((c, i) => (
                         <div
                           key={i}
-                          className="grid grid-cols-1 gap-2 border-b border-zinc-800/60 pb-3 last:border-none md:grid-cols-[1.05fr_1.35fr] md:gap-4"
+                          className="grid grid-cols-1 gap-2 border-b border-zinc-800/60 pb-3 last:border-none last:pb-0 md:grid-cols-[1.05fr_1.35fr] md:gap-4"
                         >
                           <div className="text-sm font-medium leading-relaxed text-zinc-300 transition-colors duration-300">
                             ✓ {c.case}
