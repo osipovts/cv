@@ -28,10 +28,8 @@ export default function Nav() {
   return (
     <>
       <nav
-        className={`fixed top-0 inset-x-0 z-50 transition-colors duration-300 ${
-          scrolled
-            ? 'bg-zinc-950/80 backdrop-blur-xl border-b border-zinc-800/50'
-            : 'bg-transparent'
+        className={`fixed top-0 inset-x-0 z-50 transition-colors duration-300 border-sky-600 ${
+          scrolled ? 'bg-zinc-950/80 backdrop-blur-xs border-b border-sky-800' : 'bg-transparent'
         }`}
         role="navigation"
         aria-label="Основная навигация"
