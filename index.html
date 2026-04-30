@@ -6,6 +6,20 @@
     <meta name="description" content="Осипов Алексей — Node.js разработчик" />
     <meta name="theme-color" content="#09090b" />
     <title>Node.js разработчик</title>
+    <script>
+      (function () {
+        const savedTheme = localStorage.getItem('theme');
+        if (
+          savedTheme === 'dark' ||
+          (!savedTheme && window.matchMedia('(prefers-color-scheme: dark)').matches)
+        ) {
+          console.log('dark');
+          document.documentElement.classList.add('dark');
+        } else {
+          document.documentElement.classList.remove('dark');
+        }
+      })();
+    </script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link

@@ -102,7 +102,10 @@ export default function Experience() {
   return (
     <Section id="experience">
       <div className="mx-auto max-w-5xl px-6">
-        <motion.h2 variants={fadeIn} className="mb-10 flex items-center gap-4 text-3xl font-bold">
+        <motion.h2
+          variants={fadeIn}
+          className="mb-10 flex items-center gap-4 text-3xl font-bold text-zinc-900 dark:text-zinc-50"
+        >
           <span className="font-mono text-sm text-sky-500/50">02</span>
           Опыт
         </motion.h2>
@@ -115,7 +118,7 @@ export default function Experience() {
               <motion.article
                 key={project.title}
                 variants={fadeIn}
-                className="group rounded-3xl border border-zinc-800/50 bg-zinc-950/20 px-5 py-7 transition-colors duration-300 md:px-6"
+                className="group rounded-3xl border dark:border-zinc-800/50 border-zinc-200/50 dark:bg-zinc-950/20 bg-zinc-100/30 px-5 py-7 transition-colors duration-300 md:px-6"
               >
                 <div className="grid gap-6 md:grid-cols-[260px_minmax(0,1fr)] md:gap-10">
                   {/* Левая колонка */}
@@ -124,12 +127,12 @@ export default function Experience() {
                       {number}
                     </div>
 
-                    <h3 className="text-xl font-semibold leading-tight text-zinc-100 transition-colors duration-300 md:text-2xl">
+                    <h3 className="text-xl font-semibold leading-tight text-zinc-900 dark:text-zinc-100 transition-colors duration-300 md:text-2xl">
                       {project.title}
                     </h3>
 
                     {/* Роль и стаж */}
-                    <div className="mt-3 space-y-2 text-sm text-zinc-400 transition-colors duration-300">
+                    <div className="mt-3 space-y-2 text-sm dark:text-zinc-400 text-zinc-600 transition-colors duration-300">
                       <div className="flex items-center gap-2 cursor-help" title="Должность, роль">
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
@@ -141,7 +144,7 @@ export default function Experience() {
                           strokeWidth="2"
                           strokeLinecap="round"
                           strokeLinejoin="round"
-                          className="text-zinc-500"
+                          className="text-zinc-500 dark:text-zinc-500 text-zinc-400"
                         >
                           <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
                           <circle cx="12" cy="7" r="4"></circle>
@@ -169,7 +172,7 @@ export default function Experience() {
                     </div>
 
                     <div className="mt-4 cursor-help" title="Основной технологический стек">
-                      <p className="font-mono text-[11px] leading-relaxed text-zinc-500 transition-colors duration-300">
+                      <p className="font-mono text-[11px] leading-relaxed dark:text-zinc-500 text-zinc-600 transition-colors duration-300">
                         {project.tags.join(' · ')}
                       </p>
                     </div>
@@ -186,12 +189,12 @@ export default function Experience() {
                       {project.cases.map((c, i) => (
                         <div
                           key={i}
-                          className="grid grid-cols-1 gap-2 border-b border-zinc-800/60 pb-3 last:border-none last:pb-0 md:grid-cols-[1.05fr_1.35fr] md:gap-4"
+                          className="grid grid-cols-1 gap-2 border-b dark:border-zinc-800/50 border-zinc-200/50 pb-3 last:border-none last:pb-0 md:grid-cols-[1.05fr_1.35fr] md:gap-4"
                         >
-                          <div className="text-sm font-medium leading-relaxed text-zinc-300 transition-colors duration-300">
+                          <div className="text-sm font-medium leading-relaxed dark:text-zinc-300 text-zinc-700 transition-colors duration-300">
                             ✓ {c.case}
                           </div>
-                          <div className="text-sm leading-relaxed text-zinc-300 transition-colors duration-300">
+                          <div className="text-sm leading-relaxed dark:text-zinc-300 text-zinc-700 transition-colors duration-300">
                             {c.result}
                           </div>
                         </div>

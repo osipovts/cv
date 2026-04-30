@@ -37,7 +37,7 @@ export function Section({ id, children, className = '' }: SectionProps) {
       whileInView="visible"
       viewport={{ once: true, margin: '-80px' }}
       variants={containerVariants}
-      className={`py-24 md:py-32 ${className}`}
+      className={`py-24 md:py-32 bg-zinc-50 dark:bg-zinc-950 ${className}`}
     >
       {children}
     </motion.section>

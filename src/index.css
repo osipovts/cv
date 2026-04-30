@@ -1,5 +1,7 @@
 @import 'tailwindcss';
 
+@custom-variant dark (&:where(.dark, .dark *));
+
 @theme {
   --font-sans: 'Space Grotesk', system-ui, sans-serif;
   --font-mono: 'JetBrains Mono', ui-monospace, monospace;
@@ -13,11 +15,11 @@
   }
 
   body {
-    @apply bg-zinc-950 text-zinc-50 font-sans;
+    @apply bg-zinc-50 text-zinc-900 font-sans dark:bg-zinc-950 dark:text-zinc-50;
   }
 
   ::selection {
-    @apply bg-sky-500/30 text-sky-100;
+    @apply bg-sky-500/30 text-sky-900 dark:bg-sky-500/30 dark:text-sky-100;
   }
 
   :focus:not(:focus-visible) {
@@ -25,13 +27,17 @@
   }
 
   :focus-visible {
-    @apply outline-2 outline-offset-2 outline-sky-500/60 rounded-sm;
+    @apply outline-2 outline-offset-2 outline-sky-500/60 rounded-sm dark:outline-sky-500/60;
   }
 }
 
 @utility dot-grid {
-  background-image: radial-gradient(circle, rgba(63, 63, 70, 0.4) 1px, transparent 1px);
+  background-image: radial-gradient(circle, rgba(212, 212, 216, 0.6) 1px, transparent 1px);
   background-size: 32px 32px;
+
+  @variant dark {
+    background-image: radial-gradient(circle, rgba(63, 63, 70, 0.4) 1px, transparent 1px);
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
