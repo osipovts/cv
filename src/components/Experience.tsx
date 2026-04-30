@@ -4,6 +4,8 @@ import { Section, fadeIn } from './Section';
 const projects = [
   {
     title: 'Касса самообслуживания',
+    role: 'Fullstack разработчик',
+    duration: '6 мес.',
     cases: [
       {
         case: 'Реализация бэкенд-логики',
@@ -15,31 +17,35 @@ const projects = [
       },
       {
         case: 'Доработка React-фронтенда',
-        result: 'Адаптировал фронтенд под меняющиеся требования бизнеса в ходе разработки',
+        result: 'Адаптировал фронтенд под меняющиеся требования бизнеса',
       },
     ],
     tags: ['NestJS', 'PostgreSQL', 'API', 'Jest'],
   },
   {
     title: 'Интерактивная песочница',
+    role: 'Backend разработчик',
+    duration: '8 мес.',
     cases: [
       {
         case: 'Внедрение OpenTelemetry',
-        result: 'Повысил качество реагирования на инциденты',
+        result: 'Повысил скорость и качество реагирования на инциденты',
       },
       {
         case: 'Замена устаревшего транспорта на gRPC',
-        result: 'Снизил время отклика и повысил отказоустойчивость',
+        result: 'Снизил время отклика, повысил отказоустойчивость',
       },
       {
         case: 'Рефактор спагетти-легаси кода на Clean Architecture',
-        result: 'Сделал дальнейшую работу с кодом безболезненной',
+        result: 'Сделал дальнейшую работу с кодом безболезненной, более эффективной',
       },
     ],
     tags: ['NestJS', 'MongoDB', 'Redis', 'BullMQ', 'gRPC', 'QEMU', 'Jest'],
   },
   {
     title: 'Видеостриминговая платформа',
+    role: 'Backend разработчик',
+    duration: '1 год и 2 мес.',
     cases: [
       {
         case: 'Реализация бэкенд-логики',
@@ -72,10 +78,12 @@ const projects = [
   },
   {
     title: 'Внутренняя ERP предприятия',
+    role: 'Fullstack разработчик',
+    duration: '2 года',
     cases: [
       {
         case: 'Реализация бэкенд-логики',
-        result: 'Ускорил документооборот, автоматизировал процессы, интегрировал ERP с 1С',
+        result: 'Ускорил документооборот, автоматизировал бизнес-процессы, интегрировал ERP с 1С',
       },
       {
         case: 'Создание модуля прогнозирования загруженности производственных цехов',
@@ -120,7 +128,47 @@ export default function Experience() {
                       {project.title}
                     </h3>
 
-                    <div className="mt-4">
+                    {/* Роль и стаж */}
+                    <div className="mt-3 space-y-2 text-sm text-zinc-400 transition-colors duration-300">
+                      <div className="flex items-center gap-2 cursor-help" title="Должность, роль">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="14"
+                          height="14"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          strokeWidth="2"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          className="text-zinc-500"
+                        >
+                          <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                          <circle cx="12" cy="7" r="4"></circle>
+                        </svg>
+                        <span>{project.role}</span>
+                      </div>
+                      <div className="flex items-center gap-2 cursor-help" title="Стаж">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="14"
+                          height="14"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          strokeWidth="2"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          className="text-zinc-500"
+                        >
+                          <circle cx="12" cy="12" r="10"></circle>
+                          <polyline points="12 6 12 12 16 14"></polyline>
+                        </svg>
+                        <span>{project.duration}</span>
+                      </div>
+                    </div>
+
+                    <div className="mt-4 cursor-help" title="Основной технологический стек">
                       <p className="font-mono text-[11px] leading-relaxed text-zinc-500 transition-colors duration-300">
                         {project.tags.join(' · ')}
                       </p>

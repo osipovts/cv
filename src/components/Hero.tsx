@@ -143,6 +143,7 @@ export default function Hero() {
             className="text-left max-w-lg text-[0.95rem] leading-relaxed text-zinc-400"
           >
             Привет! Меня зовут Алексей Осипов, я backend разработчик с коммерческим опытом 4+ года.
+            Так же открыт к задачам по React-фронтенду.
           </motion.p>
 
           <motion.p
