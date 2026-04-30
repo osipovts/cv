@@ -142,8 +142,15 @@ export default function Hero() {
             variants={prefersReduced ? undefined : fadeItem}
             className="text-left max-w-lg text-[0.95rem] leading-relaxed text-zinc-400"
           >
-            Привет! Меня зовут Алексей Осипов, я строю надежный backend: монолиты, микросервисы,
-            observability и интеграции.
+            Привет! Меня зовут Алексей Осипов, я backend разработчик с коммерческим опытом 4+ года.
+          </motion.p>
+
+          <motion.p
+            custom={4}
+            variants={prefersReduced ? undefined : fadeItem}
+            className="text-left max-w-lg text-[0.95rem] leading-relaxed text-zinc-400"
+          >
+            Фокус: Node.js, NestJS, микросервисы, интеграции с внешними системами и observability.
           </motion.p>
 
           <motion.p
@@ -151,18 +158,8 @@ export default function Hero() {
             variants={prefersReduced ? undefined : fadeItem}
             className="text-left max-w-lg text-[0.95rem] leading-relaxed text-zinc-400"
           >
-            Умею быстро погружаться в сложные домены, превращать разрозненные требования в понятную
-            и устойчивую систему, а затем доводить ее до релиза.
-          </motion.p>
-
-          <motion.p
-            custom={5}
-            variants={prefersReduced ? undefined : fadeItem}
-            className="text-left max-w-lg text-[0.95rem] leading-relaxed text-zinc-400"
-          >
-            Думaю не только кодом, но и метриками, отказоустойчивостью, скоростью развития продукта
-            и удобством команды, поэтому одинаково уверенно работаю как на старте нового проекта,
-            так и в поддержке высоконагруженного production.
+            В поиске удаленной работы в часовом поясе МСК (±2). Буду рад рассказать о себе более
+            подробно на собеседовании.
           </motion.p>
 
           {/* Факты */}
